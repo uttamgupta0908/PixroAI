@@ -20,14 +20,12 @@ export default function TemplateItem({ item, isSelected, onPress }: TemplateItem
                     resizeMode="cover"
                 />
                 {isSelected && (
-                    <View className="absolute top-2 right-2 bg-primary rounded-full p-1">
-                        <AntDesign name="check" size={16} color="black" />
+                    <View className="absolute top-2 right-2 bg-[#00FF7F] rounded-full p-1">
+                        <AntDesign name="check" size={16} color="gray" />
                     </View>
                 )}
             </View>
-            {/* <View className="py-2 px-2">
-                <Text className="text-white text-sm font-medium">{item.category}</Text>
-            </View> */}
+
         </TouchableOpacity>
     );
 }

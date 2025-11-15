@@ -1,3 +1,4 @@
+import { AntDesign } from '@expo/vector-icons';
 import { Text, TextInput, TouchableOpacity, View } from 'react-native';
 
 type PromptInputProps = {
@@ -16,13 +17,15 @@ export default function PromptInput({ value, onChangeText }: PromptInputProps) {
                     placeholderTextColor="#AAAAAA"
                     multiline
                     numberOfLines={3}
-                    className="text-white text-base mb-3"
+                    className="text-white mb-3"
                     textAlignVertical="top"
                 />
                 <View className="flex-row justify-between items-center">
                     <Text className="text-secondaryText text-sm"></Text>
                     <TouchableOpacity className=" px-4 py-2 rounded-lg">
-                        <Text className="text-green-500 font-medium">Generate</Text>
+                        {/* <Text className="text-green-500 font-medium">Generate</Text>
+                         */}
+                        <AntDesign name='star' size={16} color="#00FF7F" />
                     </TouchableOpacity>
                 </View>
             </View>

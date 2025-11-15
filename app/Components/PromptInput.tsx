@@ -8,7 +8,7 @@ type PromptInputProps = {
 export default function PromptInput({ value, onChangeText }: PromptInputProps) {
     return (
         <View className="p-4 pt-2s">
-            <View className="bg-card rounded-xl p-4 mb-4 ">
+            <View className="bg-background rounded-xl p-4 mb-4 border-2 border-[#454545]" >
                 <TextInput
                     value={value}
                     onChangeText={onChangeText}
@@ -21,11 +21,11 @@ export default function PromptInput({ value, onChangeText }: PromptInputProps) {
                 />
                 <View className="flex-row justify-between items-center">
                     <Text className="text-secondaryText text-sm"></Text>
-                    <TouchableOpacity className="bg-primary px-4 py-2 rounded-lg">
-                        <Text className="text-black font-medium">Generate</Text>
+                    <TouchableOpacity className=" px-4 py-2 rounded-lg">
+                        <Text className="text-green-500 font-medium">Generate</Text>
                     </TouchableOpacity>
                 </View>
             </View>
-        </View>
+        </View >
     );
 }

@@ -16,9 +16,9 @@ export default function App() {
   return (
 
     <SafeAreaProvider >
-      <SafeAreaView className=" bg-background ">
+      <SafeAreaView className=" bg-card ">
         <StatusBar />
-        <ScrollView >
+        <ScrollView className="bg-background ">
           <Header />
           <SearchBar />
           <PromptInput

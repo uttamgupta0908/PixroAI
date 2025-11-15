@@ -41,8 +41,8 @@ export default function Header({ activeTab: externalActiveTab, onTabPress }: Hea
                     <AntDesign name="left" size={24} color="#FFFFFF" />
                 </TouchableOpacity>
                 <Text className="text-white text-xl font-bold">Photography</Text>
-                <TouchableOpacity className="w-10 h-10 rounded-full bg-surface justify-center items-center">
-                    <Text className="text-white font-semibold">U</Text>
+                <TouchableOpacity className="w-10 h-10 rounded-full bg-surface justify-center items-center border border-[#454545]">
+                    <Text className="text-white font-semibold  ">U</Text>
                 </TouchableOpacity>
             </View>
 
@@ -62,18 +62,16 @@ export default function Header({ activeTab: externalActiveTab, onTabPress }: Hea
                         <TouchableOpacity
                             key={item.id}
                             onPress={() => handlePress(item.id)}
-                            className={`flex items-center justify-center px-4 py-2 mx-1 rounded-xl ${isHighlighted
-                                ? 'bg-primary/20 border border-primary'
-                                : 'bg-card'
+                            className={`flex items-center justify-center px-4 py-2 mx-1 rounded-xl 
                                 }`}
                         >
                             <Ionicons
                                 name={item.icon as any}
-                                size={20}
-                                color={isActive ? '#4CAF50' : item.color}
+                                size={24}
+                                color={item.color}
                             />
                             <Text
-                                className={`text-xs mt-1 ${isHighlighted ? 'text-white font-medium' : 'text-gray-300'
+                                className={`text-sm mt-1 ${isHighlighted ? 'text-white font-medium' : 'text-gray-300'
                                     }`}
                             >
                                 {item.label}
